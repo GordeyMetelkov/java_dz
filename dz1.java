@@ -17,4 +17,15 @@ public class dz1 {
         }
         System.out.println(sum);
     }
+    public static void task2(String[] args) {
+        // Вычислить n-ое треугольного число(сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите число n: ");
+        int n = in.nextInt();
+        int mult = 1;
+        for (int i = 1; i <= n; i++) {
+            mult *= i;
+        }
+        System.out.println(mult);
+    }
 }
